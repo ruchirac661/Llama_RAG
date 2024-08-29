@@ -1,0 +1,10 @@
+#Required packages
+llama-index==0.11.2
+llama-index-llms-gemini
+llama-index-embeddings-huggingface
+llama-index-tools-yahoo-finance
+llama-index-tools-tavily-research
+google-colab
+nest-asyncio
+pyvis
+llama-parse
