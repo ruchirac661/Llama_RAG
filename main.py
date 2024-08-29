@@ -13,6 +13,7 @@ from llama_index.tools.yahoo_finance import YahooFinanceToolSpec
 from llama_index.tools.tavily_research import TavilyToolSpec
 
 import nest_asyncio
+import os
 
 def main():
     # Access environment variables
