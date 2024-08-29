@@ -52,7 +52,7 @@ def main():
 
     # LlamaParse example
     nest_asyncio.apply()
-    documents2 = LlamaParse(api_key=LLAMA_CLOUD_API_KEY, result_type="markdown", verbose=True).load_data("./data/2023_canadian_budget.pdf")
+    documents2 = LlamaParse(api_key=LLAMA_CLOUD_API_KEY, result_type="markdown", verbose=True).load_data("./drive/MyDrive/RAG/Agent/2023_canadian_budget.pdf")
     index2 = create_vector_index(documents2, embed_model)
     query_engine2 = index2.as_query_engine()
 
