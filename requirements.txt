@@ -8,3 +8,4 @@ google-colab
 nest-asyncio
 pyvis
 llama-parse
+python-dotenv
