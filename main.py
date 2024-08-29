@@ -1,4 +1,5 @@
-from config import *
+from dotenv import load_dotenv
+load_dotenv()
 from models.index import create_vector_index, create_property_graph_index
 from tools.custom_tools import multiply_tool, add_tool, create_budget_tool
 from agents.react_agent import create_react_agent
@@ -14,6 +15,10 @@ from llama_index.tools.tavily_research import TavilyToolSpec
 import nest_asyncio
 
 def main():
+    # Access environment variables
+    google_api_key = os.getenv('GOOGLE_API_KEY')
+    llama_cloud_api_key = os.getenv('LLAMA_CLOUD_API_KEY')
+    
     # Mount Google Drive
     mount_drive()
 
